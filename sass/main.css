@@ -1,0 +1,21 @@
+html {
+  text-align: center;
+  background: url(../Images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.navbar {
+  background: url(../Images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#brand {
+  height: 80px;
+  width: 80px;
+}
+/*# sourceMappingURL=main.css.map */

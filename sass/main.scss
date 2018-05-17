@@ -1,0 +1,18 @@
+@import "color";
+html {
+    text-align: center;
+    background: $background no-repeat center center fixed;
+    background-size: cover;
+}
+.navbar {
+    background: $background no-repeat center center fixed;
+    background-size: cover;
+}
+body {
+    margin: 0 auto;
+    width: 80%;
+}
+#brand {
+    height: 80px;
+    width: 80px;
+}
