@@ -9,6 +9,11 @@ html {
   background-size: cover;
 }
 
+.navbar #title {
+  font-size: 25px;
+  margin-top: -10px;
+}
+
 body {
   margin: 0 auto;
   width: 80%;

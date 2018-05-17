@@ -7,6 +7,10 @@ html {
 .navbar {
     background: $background no-repeat center center fixed;
     background-size: cover;
+    #title {
+        font-size: 25px;
+        margin-top: -10px;
+    }
 }
 body {
     margin: 0 auto;
