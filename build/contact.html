@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Us</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="Images/nc_vert-fc-oncharcoal.ico" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="sass/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="Images/nc_vert-fc-oncharcoal.png" id="brand" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link disabled" id="title">Contact Us</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="calendar.html">Calendar</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="project.html">Events</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="news.html">News</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="applicationpage.html">Apply</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="myContainer">
+
+    <div class="container">
+      <div class="jumbotron text-center splash2">
+        <h1 class="jumboh1">Contact Us</h1>
+      </div>
+    </div>
+    <hr class="section-divider">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm">
+                <div id="ImageContainer">
+                  <img src="https://www.neumont.edu/cmsimages/faculty_jerrypayx.png" alt="">
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="otherwrap">
+                  <h2>Mr. Jerry Pay</h2>
+                </div>
+                <div id="jerryText">
+                  <div id="cardInformation">
+                    <p>Manager of the Innovation Center
+                      <br /> 143 South Main St
+                      <br /> Salt Lake City, UT 84111
+                      <br />
+                      <strong>Hours:</strong> M-F, 8 a.m.-5 p.m.
+                      <br />
+                      <strong>Email:</strong>
+                      <a href="mailto:j.pay@neumont.edu">j.pay@neumont.edu</a>
+                      <br />
+                  </div>
+
+                </div>
+                <div class="otherwrap" id="btnContainer">
+                  <a href="https://www.neumont.edu/academics/our-faculty/jerry-pay.html" class="btn darkBtn" role="button">Learn More</a>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <hr class="section-divider">
+
+      <div class="container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm">
+              <div class="otherwrap">
+                <h2>Neumont</h2>
+              </div>
+              <div id="jerryText">
+                <p>College of Computer Science
+                  <br /> 143 South Main St
+                  <br /> Salt Lake City, UT 84111
+                  <br />
+                  <strong>Hours:</strong> M-F, 8 a.m.-5 p.m.
+                  <br />
+                  <strong>Phone:</strong> 1-888-638-6668 (front desk)
+                  <br />
+                  <strong>Email:</strong>
+                  <a href="mailto:info@neumont.edu">info@neumont.edu</a>
+                  <br />
+                  <strong>Location:</strong> See Map Below
+                  <br/>
+              </div>
+              <div class="otherwrap" id="btnContainer">
+                <a href="http://neumont.smartcatalogiq.com/en/2017-2018/Catalog/About-Neumont-University/Neumont-History" class="btn darkBtn"
+                  role="button">Our History</a>
+
+              </div>
+            </div>
+            <div class="col-sm">
+              <div id="ImageContainer">
+                <img src="https://www.downtownrising.com/_files/images/neumontu.jpg" alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <hr class="section-divider">
+      <div class="container-fluid wrap">
+        <div id="map-canvas"></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+      </div>
+      <hr class="section-divider">
+      <div class="formBox wrap">
+        <div id="wrapper">
+
+          <div id="fBox">
+            <h2>
+              <span class="thin">Message Us</span>
+            </h2>
+            <p>Please fill out the following information to receive additional information.</p>
+            <form class="messageForm" name="myForm" method="post" enctype="text/plain">
+              <input id="fname" type="text" placeholder="First Name*" Name="First Name" required>
+              <input id="lname" type="text" placeholder="Last Name*" name="Last Name" required>
+              <input id="email" type="email" placeholder="Email" name="Email" required>
+              <input id="message" type="text" placeholder="Message" name="Message">
+              <div class="container subBtnContainer wrap">
+                  <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+
+          </div>
+
+          <script src="scripts/map_script.js"></script>
+          <script src="main.bundle.js"></script>
+
+</body>
+
+</html>
