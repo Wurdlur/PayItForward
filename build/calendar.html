@@ -5,13 +5,18 @@
   <link rel="shortcut icon" type="image/x-icon" href="Images/nc_vert-fc-oncharcoal.ico" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
     crossorigin="anonymous">
   <link rel="stylesheet" href="sass/main.css" />
-  <title>Home</title>
+  <title>Calendar & Events</title>
+  <link rel="stylesheet" type="text/css" href="sass/jsCalendar.css">
+  <link rel="stylesheet" type="text/css" href="sass/jsCalendar.clean.css">
+  <script type="text/javascript" src="scripts/jsCalendar.js"></script>
+
 </head>
 
-<body>
+<body onload="elements.addButton.click()">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <a class="navbar-brand" href="#">
       <img src="Images/nc_vert-fc-oncharcoal.png" id="brand" />
@@ -40,6 +45,7 @@
         <li class="nav-item active">
           <a class="nav-link disabled" href="applicationpage.html">Apply</a>
         </li>
+
       </ul>
     </div>
   </nav>
@@ -47,6 +53,18 @@
     <div class="jumbotron text-center splash">
       <h1 class="jumboh1">Calendar & Events</h1>
     </div>
+  </div>
+  <hr class="section-divider">
+  <div id="wrapper">
+    <div id="events-calendar"></div>
+    <div id="events"></div>
+    <div class="clear"></div>
+
+  </div>
+  <hr class="section-divider">
+
+  <div id="eventsHolder" class="eventwrap">
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -50,8 +50,8 @@ body {
 }
 
 #myContainer {
-  padding: 60px;
-  margin-top: 100px;
+  padding: 25px;
+  margin-top: 110px;
 }
 
 #ImageContainer {
@@ -117,6 +117,13 @@ hr.section-divider {
 .otherwrap a {
   margin: 5px;
   padding: 5px;
+}
+
+.eventwrap {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 #map-canvas {
@@ -409,5 +416,169 @@ input[type=checkbox] {
   color: #2B2929;
   padding: 10px;
   margin: 5px;
+}
+
+em {
+  color: #D24D3B;
+}
+
+.dateTime {
+  font-weight: 400;
+  letter-spacing: 1;
+}
+
+.eventDes {
+  font-weight: 600;
+  color: #2B2929;
+  letter-spacing: 2;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.description {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.jsCalendar.clean-theme tbody td.jsCalendar-previous,
+.jsCalendar.clean-theme tbody td.jsCalendar-next {
+  color: #000;
+  opacity: 0.2;
+}
+
+#wrapper {
+  margin: 0 auto;
+  display: -ms-inline-grid;
+}
+
+#wrapper .jsCalendar table {
+  box-shadow: none;
+}
+
+.clear {
+  clear: both;
+}
+
+#events-calendar {
+  float: left;
+}
+
+#events {
+  /* float: left;
+    width: 435px; */
+  margin: 10px 20px 10px 5px;
+}
+
+#events .title {
+  padding: 10px 0px;
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+#events .subtitle {
+  padding: 5px 0px;
+  font-size: 14px;
+  text-align: center;
+  color: #888;
+}
+
+#events .list {
+  height: 250px;
+  overflow-y: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#events .list .event-item {
+  line-height: 24px;
+  min-height: 24px;
+  padding: 2px 5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#events .list .event-item .close {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #000;
+  border-radius: 8px;
+  height: 14px;
+  width: 14px;
+  line-height: 12px;
+  text-align: center;
+  float: right;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0px;
+  margin: 5px;
+  display: block;
+  overflow: hidden;
+  background: #F44336;
+  cursor: pointer;
+}
+
+#events .action {
+  text-align: right;
+}
+
+#events .action input {
+  padding: 0px 5px;
+  font-size: 12px;
+  margin: 10px 5px;
+  border: 1px solid #999999;
+  height: 28px;
+  line-height: 28px;
+  width: 120px;
+  background: #f8f8f8;
+  color: black;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#events .action input:hover {
+  background: #eee;
+  border: 1px solid #000;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=main.css.map */

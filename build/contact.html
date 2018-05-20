@@ -2,49 +2,48 @@
 <html>
 
 <head>
-  <title>Contact Us</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="Images/nc_vert-fc-oncharcoal.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="Images/nc_vert-fc-oncharcoal.ico" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
     crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="sass/main.css">
+  <title>Contact Us</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">
-      <img src="Images/nc_vert-fc-oncharcoal.png" id="brand" />
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link disabled" id="title">Contact Us</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link disabled" href="index.html">Home</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link disabled" href="calendar.html">Calendar</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link disabled" href="project.html">Events</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link disabled" href="news.html">News</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link disabled" href="applicationpage.html">Apply</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="Images/nc_vert-fc-oncharcoal.png" id="brand" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link disabled" id="title">Contact Us</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link disabled" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link disabled" href="project.html">Events</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link disabled" href="news.html">News</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link disabled" href="calendar.html">Calendar</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link disabled" href="applicationpage.html">Apply</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
   <div id="myContainer">
 
     <div class="container">
@@ -130,37 +129,44 @@
             </div>
           </div>
         </div>
-
       </div>
-      <hr class="section-divider">
-      <div class="container-fluid wrap">
-        <div id="map-canvas"></div>
+    </div>
+  </div>
+  <hr class="section-divider">
+  <div class="container-fluid wrap">
+    <div id="map-canvas"></div>
 
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
-      </div>
-      <hr class="section-divider">
-      <div class="formBox wrap">
-        <div id="wrapper">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+  </div>
+  <hr class="section-divider">
+  <div class="formBox wrap">
+    <div id="wrapper">
 
-          <div id="fBox">
-            <h2>
-              <span class="thin">Message Us</span>
-            </h2>
-            <p>Please fill out the following information to receive additional information.</p>
-            <form class="messageForm" name="myForm" method="post" enctype="text/plain">
-              <input id="fname" type="text" placeholder="First Name*" Name="First Name" required>
-              <input id="lname" type="text" placeholder="Last Name*" name="Last Name" required>
-              <input id="email" type="email" placeholder="Email" name="Email" required>
-              <input id="message" type="text" placeholder="Message" name="Message">
-              <div class="container subBtnContainer wrap">
-                  <button type="submit" class="btn">Submit</button>
-                </div>
-            </form>
-
+      <div id="fBox">
+        <h2>
+          <span class="thin">Message Us</span>
+        </h2>
+        <p>Please fill out the following information to receive additional information.</p>
+        <form class="messageForm" name="myForm" method="post" enctype="text/plain">
+          <input id="fname" type="text" placeholder="First Name*" Name="First Name" required>
+          <input id="lname" type="text" placeholder="Last Name*" name="Last Name" required>
+          <input id="email" type="email" placeholder="Email" name="Email" required>
+          <input id="message" type="text" placeholder="Message" name="Message">
+          <div class="container subBtnContainer wrap">
+            <button type="submit" class="btn">Submit</button>
           </div>
+        </form>
 
-          <script src="scripts/map_script.js"></script>
-          <script src="main.bundle.js"></script>
+      </div>
+      <div class="container wrap">
+        <a href="https://www.facebook.com/neumont" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/neumontcs?lang=en" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/school/neumont-university/" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/c/neumont/" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/neumontcs/" class="fa fa-instagram"></a>
+      </div>
+      <script src="scripts/map_script.js"></script>
+      <script src="main.bundle.js"></script>
 
 </body>
 
