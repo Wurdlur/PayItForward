@@ -515,7 +515,6 @@ em {
   margin: 10px;
   text-align: center;
   font-weight: bold;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 #events .subtitle {
@@ -528,7 +527,7 @@ em {
 #events .list {
   height: 250px;
   overflow-y: auto;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #events .list .event-item {
@@ -549,7 +548,6 @@ em {
   line-height: 12px;
   text-align: center;
   float: right;
-  border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 0px;
   margin: 5px;
   display: block;
