@@ -22,24 +22,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link disabled" id="title">Home</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link disabled" href="calendar.html">Calendar</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link disabled" href="project.html">Events</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link disabled" href="news.html">News</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link disabled" href="contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link disabled" href="applicationpage.html">Apply</a>
-            </li>
+                <li class="nav-item active">
+                    <a class="nav-link disabled" id="title">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link disabled" href="calendar.html">Calendar</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link disabled" href="project.html">Events</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link disabled" href="news.html">News</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link disabled" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link disabled" href="applicationpage.html">Apply</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -59,8 +59,24 @@
         </div>
     </div>
     <div id="myContainer">
-        <div class="jumbotron text-center splash">
-            <h1 class="jumboh1">Calendar & Events</h1>
+        <div class="container">
+            <div class="jumbotron text-center" id="myImg">
+                <h1 class="jumboh1">Home</h1>
+                <a class="carousel-control-prev" onclick="prevFunction()" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" onclick="nextFunction()" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="otherwrap" id="btnContainer">
+            <button class="btn drkBtn" id="myButton1" onclick="currentDiv(1)">1</button>
+            <button class="btn drkBtn" id="myButton2" onclick="currentDiv(2)">2</button>
+            <button class="btn drkBtn" id="myButton3" onclick="currentDiv(3)">3</button>
         </div>
     </div>
     <hr class="section-divider">
@@ -70,8 +86,10 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+    <script src="scripts/indexscript.js"></script>
     <script src="main.bundle.js"></script>
 
 </body>
 <!-- https://www.cappex.com/assets/c-2000/photos/042915_staffheadshots_0429.jpg -->
+
 </html>

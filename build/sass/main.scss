@@ -293,6 +293,20 @@ input {
     text-shadow: 1px 1px 5px rgba(0,0,0,.4);
     z-index: 9999;
   }
+
+  #myImg{
+    //   background: url('https://www.cappex.com/assets/c-2000/photos/042915_staffheadshots_0429.jpg');
+    background-size: cover;
+    color: $NCYellow;
+    // min-width: 220px;
+     min-height: 300px;
+    margin-bottom: 0 !important;
+    overflow: hidden;
+    padding-top: 10em !important;
+    // position: relative;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.4);
+    z-index: 9999;
+  }
 .jumboh1 {
     font-size: 50px;
 }
