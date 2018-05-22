@@ -541,3 +541,28 @@ em {
 .carButton {
     font-size: 35px;
 }
+.mainFooter {
+    align-content: center;
+    background: $NCGray;
+    color: $NCWhite;
+    a {
+        color: $NCWhite;
+        text-decoration: none;
+    }
+    h5 {
+        font-size: .8em;
+    }
+    p {
+        font-size: .6em;
+    }
+    .footerLeft {
+        flex: 3;
+    }
+    #followUs {
+        text-align: right;
+        font-size: 1em;
+        #instagram {
+            background: $NCGray; 
+        }
+    }
+}
