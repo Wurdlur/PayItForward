@@ -531,3 +531,13 @@ em {
     border: 1px solid #000;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
   }
+.mainText {
+    color: $NCWhite;
+    text-shadow: 3px 2px $NCBlack;
+}
+.secondaryText {
+    font-size: 35px;
+}
+.carButton {
+    font-size: 35px;
+}
