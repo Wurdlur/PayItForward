@@ -1,8 +1,8 @@
 var currentImage = 0;
 var myImages = [
-    "https://i.ytimg.com/vi/_jHKkonePsE/maxresdefault.jpg",
-    "https://www.cappex.com/assets/c-2000/photos/042915_staffheadshots_0429.jpg",
-    "https://i.ytimg.com/vi/9sxMr4IdXaU/maxresdefault.jpg"
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Neumont_University%27s_campus_in_downtown_Salt_Lake_City%2C_Utah..jpg/1599px-Neumont_University%27s_campus_in_downtown_Salt_Lake_City%2C_Utah..jpg",
+    "../Images/commons.jpg",
+    "../Images/studentdevlopment.jpg"
 ];
 var intervalNum = 4000;
 
@@ -11,6 +11,10 @@ document.getElementById("myImg").style.backgroundSize = "cover";
 document.getElementById(`myButton1`).style.background = "#FC0";
 document.getElementById(`myButton2`).style.background = "rgba(0, 0, 0, 0.0)";
 document.getElementById(`myButton3`).style.background = "rgba(0, 0, 0, 0.0)";
+document.getElementById("carouselTitle").innerHTML = "Home";
+document.getElementById("carouselInfo").innerHTML = "Learn more about us Today!";
+document.getElementById("hand").style.display = "none";
+document.getElementById("card").style.display = "none";
 
 function nextFunction() {
     console.log(currentImage);
@@ -20,15 +24,37 @@ function nextFunction() {
             currentImage = 0;
             document.getElementById("myImg").style.background = `#f3f3f3 url(' ${myImages[currentImage]}')  bottom center no-repeat`;
             document.getElementById("myImg").style.backgroundSize = "cover";
+            document.getElementById("carouselTitle").innerHTML = "Home";
+            document.getElementById("carouselInfo").innerHTML = "Learn more about us Today!"
+            document.getElementById("hand").style.display = "none";
+            document.getElementById("card").style.display = "none";
+            document.getElementById("castle").style.display = "inline-block";
         } else if (currentImage >= 0) {
-
-            document.getElementById("myImg").style.background = `#f3f3f3 url(' ${myImages[currentImage + 1]}')  bottom center no-repeat`;
-            document.getElementById("myImg").style.backgroundSize = "cover";
             currentImage += 1;
+            document.getElementById("myImg").style.background = `#f3f3f3 url(' ${myImages[currentImage]}')  bottom center no-repeat`;
+            document.getElementById("myImg").style.backgroundSize = "cover";
+            if(currentImage == 1) {
+                document.getElementById("carouselTitle").innerHTML = "Join the Community";
+                document.getElementById("carouselInfo").innerHTML = "Join the community and work with others today!"
+                document.getElementById("castle").style.display = "none";
+                document.getElementById("card").style.display = "none";
+                document.getElementById("hand").style.display = "inline-block";
+            } else {
+                document.getElementById("carouselTitle").innerHTML = "Like Minds";
+                document.getElementById("carouselInfo").innerHTML = "Join others who have ideas and goals the same as you!"
+                document.getElementById("castle").style.display = "none";
+                document.getElementById("hand").style.display = "none";
+                document.getElementById("card").style.display = "inline-block";
+            }
         } else {
             currentImage = 0;
             document.getElementById("myImg").style.background = `#f3f3f3 url(' ${myImages[currentImage]}')  bottom center no-repeat`;
             document.getElementById("myImg").style.backgroundSize = "cover";
+            document.getElementById("carouselTitle").innerHTML = "Home";
+            document.getElementById("carouselInfo").innerHTML = "Learn more about us Today!"
+            document.getElementById("castle").style.display = "inline-block";
+            document.getElementById("card").style.display = "none";
+            document.getElementById("hand").style.display = "none";
         }
     }
     switch(currentImage){
@@ -36,60 +62,33 @@ function nextFunction() {
         document.getElementById(`myButton1`).style.background = "#FC0";
         document.getElementById(`myButton2`).style.background = "rgba(0, 0, 0, 0.0)";
         document.getElementById(`myButton3`).style.background = "rgba(0, 0, 0, 0.0)";
+        document.getElementById("carouselTitle").innerHTML = "Home";
+        document.getElementById("carouselInfo").innerHTML = "Learn more about us Today!"
+        document.getElementById("hand").style.display = "none";
+        document.getElementById("card").style.display = "none";
+        document.getElementById("castle").style.display = "inline-block";
         break;
         case 1:
         document.getElementById(`myButton2`).style.background = "#FC0";
         document.getElementById(`myButton1`).style.background = "rgba(0, 0, 0, 0.0)";
         document.getElementById(`myButton3`).style.background = "rgba(0, 0, 0, 0.0)";
+        document.getElementById("carouselTitle").innerHTML = "Join the Community";
+        document.getElementById("carouselInfo").innerHTML = "Join the community and work with others today!"
+        document.getElementById("castle").style.display = "none";
+        document.getElementById("card").style.display = "none";
+        document.getElementById("hand").style.display = "inline-block";
         break;
         case 2:
         document.getElementById("myButton1").style.background = "rgba(0, 0, 0, 0.0)";
         document.getElementById("myButton2").style.background = "rgba(0, 0, 0, 0.0)";
         document.getElementById("myButton3").style.background = "#FC0";
+        document.getElementById("carouselTitle").innerHTML = "Like Minds";
+        document.getElementById("carouselInfo").innerHTML = "Join others who have ideas and goals the same as you!"
+        document.getElementById("castle").style.display = "none";
+        document.getElementById("hand").style.display = "none";
+        document.getElementById("card").style.display = "inline-block";
         break;
     }
-    
-}
-function prevFunction() {
-    intervalNum = 0;    
-    console.log(currentImage);
-    console.log("length: " + myImages.length)
-    if (myImages[currentImage] != null) {
-        if (currentImage == 0) {
-            currentImage = myImages.length - 1;
-            document.getElementById("myImg").style.background = `#f3f3f3 url(' ${myImages[currentImage]}')  bottom center no-repeat`;
-            document.getElementById("myImg").style.backgroundSize = "cover";
-
-        } else if (currentImage <= myImages.length - 1) {
-
-            document.getElementById("myImg").style.background = `#f3f3f3 url(' ${myImages[currentImage - 1]}')  bottom center no-repeat`;
-            document.getElementById("myImg").style.backgroundSize = "cover";
-
-            currentImage -= 1;
-        } else {
-            currentImage = 0;
-            document.getElementById("myImg").style.background = `#f3f3f3 url(' ${myImages[currentImage]}')  bottom center no-repeat`;
-            document.getElementById("myImg").style.backgroundSize = "cover";
-        }
-    }
-    switch(currentImage){
-        case 0:
-        document.getElementById(`myButton1`).style.background = "#FC0";
-        document.getElementById(`myButton2`).style.background = "rgba(0, 0, 0, 0.0)";
-        document.getElementById(`myButton3`).style.background = "rgba(0, 0, 0, 0.0)";
-        break;
-        case 1:
-        document.getElementById(`myButton2`).style.background = "#FC0";
-        document.getElementById(`myButton1`).style.background = "rgba(0, 0, 0, 0.0)";
-        document.getElementById(`myButton3`).style.background = "rgba(0, 0, 0, 0.0)";
-        break;
-        case 2:
-        document.getElementById("myButton1").style.background = "rgba(0, 0, 0, 0.0)";
-        document.getElementById("myButton2").style.background = "rgba(0, 0, 0, 0.0)";
-        document.getElementById("myButton3").style.background = "#FC0";
-        break;
-    }
-    
 }
 
 function currentDiv(n) {
@@ -103,16 +102,31 @@ function currentDiv(n) {
         document.getElementById(`myButton1`).style.background = "#FC0";
         document.getElementById(`myButton2`).style.background = "rgba(0, 0, 0, 0.0)";
         document.getElementById(`myButton3`).style.background = "rgba(0, 0, 0, 0.0)";
+        document.getElementById("carouselTitle").innerHTML = "Home";
+        document.getElementById("carouselInfo").innerHTML = "Learn more about us Today!";
+        document.getElementById("hand").style.display = "none";
+        document.getElementById("card").style.display = "none";
+        document.getElementById("castle").style.display = "inline-block";
         break;
         case 1:
         document.getElementById(`myButton2`).style.background = "#FC0";
         document.getElementById(`myButton1`).style.background = "rgba(0, 0, 0, 0.0)";
         document.getElementById(`myButton3`).style.background = "rgba(0, 0, 0, 0.0)";
+        document.getElementById("carouselTitle").innerHTML = "Join the Community";
+        document.getElementById("carouselInfo").innerHTML = "Join the community and work with others today!";
+        document.getElementById("castle").style.display = "none";
+        document.getElementById("card").style.display = "none";
+        document.getElementById("hand").style.display = "inline-block";
         break;
         case 2:
         document.getElementById("myButton1").style.background = "rgba(0, 0, 0, 0.0)";
         document.getElementById("myButton2").style.background = "rgba(0, 0, 0, 0.0)";
         document.getElementById("myButton3").style.background = "#FC0";
+        document.getElementById("carouselTitle").innerHTML = "Like Minds";
+        document.getElementById("carouselInfo").innerHTML = "Join others who have ideas and goals the same as you!";
+        document.getElementById("castle").style.display = "none";
+        document.getElementById("hand").style.display = "none";
+        document.getElementById("card").style.display = "inline-block";
         break;
     }
   
