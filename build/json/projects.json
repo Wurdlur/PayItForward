@@ -9,13 +9,13 @@
         {
             "personName": "Emily Remy",
             "projectName": "Signlate",
-            "projectImageSrc":"https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/24899784_1706854336055633_7374237370130583432_n.jpg?_nc_cat=0&oh=a22b436f030f8515e185a3088a23d616&oe=5B8DADD6",            
+            "projectImageSrc":"../Images/emily.jpg",            
             "projectDesc": "Signlate is a user-friendly, two-way translation app that will translate not only English to ASL but also ASL to English. It is meant to be a lifestyle app that can be tailored to the needs of its users. It uses 3D modeling, instead of actors, allowing it to be updated with new words and dialects. SignLate's main feature is how it allows you to look up a specific sign through keywords and tags to find its meaning in English. My future plans for the app are to implement Augmented Reality, and other languages such as British sign language, and Spanish sign language."
         },
         {
             "personName": "Sophie Wargo",
             "projectName": "Wine and Dine",
-            "projectImageSrc":"https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/24899784_1706854336055633_7374237370130583432_n.jpg?_nc_cat=0&oh=a22b436f030f8515e185a3088a23d616&oe=5B8DADD6",            
+            "projectImageSrc":"https://i.ytimg.com/vi/25PiMET3Bkk/maxresdefault.jpg",            
             "projectDesc": "This completely frontend (for now) application was built as a final project for my Advanced Web Scripting class. The requirements were to make it solely frontend while using an outside API (Yummly) and a frontend framework (React). This was my first experience developing with React.<br/>This application asks users to select dietary options so it can return a proper meal accompanied with a wine that would pair well based on flavors and ingredients. This project is currently in further development with plans to have it allow users to save wine and meal pairings and share them on social media."
         },
         {
