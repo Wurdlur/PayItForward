@@ -1,8 +1,8 @@
 var currentImage = 0;
 var myImages = [
     "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Neumont_University%27s_campus_in_downtown_Salt_Lake_City%2C_Utah..jpg/1599px-Neumont_University%27s_campus_in_downtown_Salt_Lake_City%2C_Utah..jpg",
-    "/Images/commons.jpg",
-    "/Images/studentdevlopment.jpg"
+    "Images/commons.jpg",
+    "Images/studentdevlopment.jpg"
 ];
 var intervalNum = 4000;
 
