@@ -38,7 +38,7 @@ function loadComplete(evt) {
   // document.body.appendChild(initDiv);
   el.appendChild(initDiv);
 
-  for (var i = 1; i < eventsData.eventsList.length; i++) {
+  for (var i = 1; i < eventsData.eventsList.length+1; i++) {
     newDiv = document.createElement("div");
     newDiv.id = "div" + i.toString();
     // newDiv.className += "wrap";
@@ -47,30 +47,52 @@ function loadComplete(evt) {
     var el = document.getElementById("eventsHolder");
     el.appendChild(newDiv);
 
+    
   }
   for (var j = 0; j < eventsData.eventsList.length; j++) {
     eventsDesc.push(eventsData.eventsList[j].eventDescription);
 
   }
+  // for (var l = 0; l < matches.length; l++) {
+  //   s = matches[l].innerHTML;
+  //   console.log(s);
+  //   console.log("inner: " + matches[l].innerHTML)
+  //   if (matches[l].innerHTML.includes(numsArr[count])) {
+  //     matches[l].style.color = '#EA9919';
+  //     matches[l].className += "myevent";
+  //     count++;
+
+  //   }
+
+  //   console.log(count);
+  // }
+  // console.log("MTCH: " + matches.innerHTML);
+
+
   for (var l = 0; l < matches.length; l++) {
-    s = matches[l].innerHTML;
-    console.log(s);
-    console.log("inner: " + matches[l].innerHTML)
-    if (matches[l].innerHTML.includes(numsArr[count])) {
+    // s = matches[l].innerHTML;
+    console.log("length: " + matches.length);
+    console.log("inner: " + matches[l].innerHTML);
+    if (matches[l].innerHTML == numsArr[count]) {
       matches[l].style.color = '#EA9919';
-      matches[l].className += "myevent";
+      // matches[l].className += "myevent";
       count++;
 
     }
 
+
+    //     if (matches[l].innerHTML.includes(numsArr[count])) {
+    //       matches[l].style.color = '#EA9919';
+    //       matches[l].className += "myevent";
+    //       count++;
+    // break;
+    //     }
+
     console.log(count);
   }
-  console.log("MTCH: " + matches.innerHTML);
 
-  var element = document.getElementsByClassName('myevent')[0];
-  element.addEventListener("onclick", function (e) {
-    alert('something');
-  }, false);
+
+
 }
 
 

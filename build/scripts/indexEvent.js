@@ -18,7 +18,7 @@ function loadComplete(evt) {
   initDiv.innerHTML = "Upcoming Events";
   el.appendChild(initDiv);
 
-  for (var i = 1; i < eventsData.eventsList.length; i++) {
+  for (var i = 1; i < eventsData.eventsList.length+1; i++) {
     newDiv = document.createElement("div");
     newDiv.id = "div" + i.toString();
     newDiv.innerHTML = "<p><strong class='dateTime'>" + eventsData.eventsList[i - 1].eventDate + "\t" + eventsData.eventsList[i - 1].eventTime + "</strong> |\t<em>" + eventsData.eventsList[i - 1].eventLocation + "</em><br/><strong class='eventDes'>" + eventsData.eventsList[i - 1].eventDescription + "</strong><br/><p>";
